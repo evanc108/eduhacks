@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import AudioReactRecorder, { RecordState } from 'audio-react-recorder'
+import PresentationGrader from './PresentationGrader'
 
 class App extends Component {
   constructor(props) {
@@ -37,6 +38,7 @@ class App extends Component {
 
         <button onClick={this.start}>Start</button>
         <button onClick={this.stop}>Stop</button>
+        <PresentationGrader></PresentationGrader>
       </div>
     )
   }
